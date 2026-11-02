@@ -1,3 +1,5 @@
+import os
+
 from fpdf import FPDF
 import streamlit as st
 
@@ -177,11 +179,24 @@ elif menu == "Sobre a Aplicação":
 elif menu == "Sobre o Desenvolvedor":
   st.title("👨‍💻 Desenvolvedor Responsável")
 
+  # Procura a foto com os nomes mais comuns
+  foto = next(
+      (
+          f
+          for f in ["prof_pic.jpeg", "prof_pic.jpg", "prof_pic..jpeg"]
+          if os.path.exists(f)
+      ),
+      None,
+  )
+
   col_dev1, col_dev2 = st.columns([1, 2])
   with col_dev1:
-    try:
-      st.image("prof_pic.jpg", width=220)
-    except:
+    if foto:
+      try:
+        st.image(foto, width=220)
+      except Exception:
+        st.write("[Foto do Desenvolvedor]")
+    else:
       st.write("[Foto do Desenvolvedor]")
 
   with col_dev2:
@@ -196,7 +211,7 @@ elif menu == "Sobre o Desenvolvedor":
             
             ---
             **Conecte-se com o Desenvolvedor:**  
-            * [Acessar Portfólio Profissional](https://github.com)  
-            * [GitHub Oficial](https://github.com)  
+            * [Acessar Portfólio Profissional](https://github.com/eduardobatista-glitch)  
+            * [GitHub Oficial](https://github.com/eduardobatista-glitch)  
             """
     )
