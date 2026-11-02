@@ -5,10 +5,8 @@ import streamlit as st
 
 # Configuração da página (DEVE SER SEMPRE A PRIMEIRA LINHA DO STREAMLIT)
 st.set_page_config(
-  st.set_page_config(
     page_title="AgroManejo Amazônia | Diagnóstico de Solos",
     layout="wide",
-
 )
 
 # --- BARRA LATERAL (MENU) ---
@@ -31,7 +29,7 @@ menu = st.sidebar.radio(
 
 # --- SEÇÃO 1: DIAGNÓSTICO DE SOLO ---
 if menu == "Diagnóstico de Solo":
-  st.title("🌱 AgroManejo Amazônia | Diagnóstico de Solos")
+  st.title("AgroManejo Amazônia | Diagnóstico de Solos")
   st.markdown(
       "Ferramenta de apoio à decisão para o manejo sustentável na agricultura"
       " familiar."
@@ -216,6 +214,7 @@ elif menu == "Sobre o Desenvolvedor":
             * [GitHub Oficial](https://github.com/eduardobatista-glitch)  
             """
     )
+
 # --- RODAPÉ (aparece em todas as seções) ---
 st.markdown("---")
 st.markdown(
