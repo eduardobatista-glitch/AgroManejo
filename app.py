@@ -5,9 +5,10 @@ import streamlit as st
 
 # Configuração da página (DEVE SER SEMPRE A PRIMEIRA LINHA DO STREAMLIT)
 st.set_page_config(
+  st.set_page_config(
     page_title="AgroManejo Amazônia | Diagnóstico de Solos",
-    page_icon="🌱",
     layout="wide",
+
 )
 
 # --- BARRA LATERAL (MENU) ---
