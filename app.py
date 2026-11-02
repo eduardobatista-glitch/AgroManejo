@@ -215,3 +215,15 @@ elif menu == "Sobre o Desenvolvedor":
             * [GitHub Oficial](https://github.com/eduardobatista-glitch)  
             """
     )
+# --- RODAPÉ (aparece em todas as seções) ---
+st.markdown("---")
+st.markdown(
+    """
+    <div style="text-align: center; color: gray; font-size: 14px; padding: 10px 0;">
+        Desenvolvido por <b>Eduardo da Costa Batista</b><br>
+        Discente de Agronomia &amp; Pesquisador | IEAA / UFAM - Campus Humaitá<br>
+        AgroManejo Amazônia © 2026
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
