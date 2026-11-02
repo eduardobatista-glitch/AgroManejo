@@ -220,9 +220,10 @@ st.markdown("---")
 st.markdown(
     """
     <div style="text-align: center; color: gray; font-size: 14px; padding: 10px 0;">
-        Desenvolvido por <b>Eduardo da Costa Batista</b><br>
-        Discente de Agronomia &amp; Pesquisador | IEAA / UFAM - Campus Humaitá<br>
-        AgroManejo Amazônia © 2026
+        <b>AgroManejo Amazônia</b> © 2026<br>
+        Desenvolvido por <b>Eduardo da Costa Batista</b> (Desenvolvedor e Cofundador)<br>
+        em parceria com a <b>Dra. Natasha Nina</b> (Cofundadora)<br>
+        IEAA / UFAM - Campus Humaitá
     </div>
     """,
     unsafe_allow_html=True,
