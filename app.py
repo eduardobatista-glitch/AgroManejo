@@ -157,7 +157,7 @@ na calha do Médio Rio Madeira e no entorno da rodovia BR-319.
 
 # --- SEÇÃO 2: SOBRE A APLICAÇÃO ---
 elif menu == "Sobre a Aplicação":
-  st.title("ℹ️ Sobre a Plataforma AgroManejo Amazônia")
+  st.title(" Sobre a Plataforma AgroManejo Amazônia")
   st.markdown(
       """
         O **AgroManejo Amazônia** é uma ferramenta de tecnologia agrícola e extensão rural concebida com um propósito estritamente social, solidário e sem fins lucrativos.
@@ -176,7 +176,7 @@ elif menu == "Sobre a Aplicação":
 
 # --- SEÇÃO 3: SOBRE O DESENVOLVEDOR ---
 elif menu == "Sobre o Desenvolvedor":
-  st.title("👨‍💻 Desenvolvedor Responsável")
+  st.title(" Desenvolvedor Responsável")
 
   # Procura a foto com os nomes mais comuns
   foto = next(
